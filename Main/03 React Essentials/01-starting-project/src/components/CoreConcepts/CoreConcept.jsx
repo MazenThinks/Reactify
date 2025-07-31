@@ -1,4 +1,4 @@
-import "./CoreConcepts.css";
+import "./CoreConcept.css";
 
 function CoreConcept(props) {
   return (

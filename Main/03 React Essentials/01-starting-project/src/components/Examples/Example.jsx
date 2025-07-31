@@ -1,6 +1,6 @@
-import "./Examples.css";
+import "./Example.css";
 
-function Examples({ label, onSelect, isSelected }) {
+function Example({ label, onSelect, isSelected, children }) {
   return (
     <>
       <li>
@@ -8,11 +8,11 @@ function Examples({ label, onSelect, isSelected }) {
           className={isSelected ? "active" : undefined}
           onClick={onSelect}
         >
-          {label}
+          {children}
         </button>
       </li>
     </>
   );
 }
 
-export default Examples;
+export default Example;
